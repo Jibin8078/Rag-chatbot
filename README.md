@@ -63,30 +63,32 @@ Project Structure
 │
 └── README.md
 
+1 Clone Repository:
+  git clone https://github.com/your-username/your-repository-name.git
+  cd your-repository-name
+  
+2 Create a Virtual Environment
+  python -m venv venv
 
+3 Install Dependencies
+  pip install -r requirements.txt
 
-1 Create a Virtual Environment
-   python -m venv venv
+4 Or install manually
+  pip install fastapi uvicorn langchain langchain-community langchain-core langchain-text-splitters langchain-ollama faiss-cpu      jinja2
 
-2 Install Dependencies
-   pip install -r requirements.txt
+5 Install and Setup Ollama
+  Download from:
+  https://ollama.com
 
-3 Or install manually
-   pip install fastapi uvicorn langchain langchain-community langchain-core langchain-text-splitters langchain-ollama faiss-cpu jinja2
+6 Pull required models:
+   ollama pull phi3
+   ollama pull all-minilm
 
-4 Install and Setup Ollama
-   Download from:
-   https://ollama.com
-
-5  Pull required models:
-    ollama pull phi3
-    ollama pull all-minilm
-
-6 Start the ollma server
-     ollama serve
+7 Start the ollma server
+  ollama serve
 
 7 Run the Application
   uvicorn app:app --reload
 
-Server will start at:http://127.0.0.1:8000
+  Server will start at:http://127.0.0.1:8000
 
