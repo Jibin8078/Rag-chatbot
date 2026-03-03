@@ -67,16 +67,16 @@ Project Structure
   git clone https://github.com/your-username/your-repository-name.git
   cd your-repository-name
   
-2 Create a Virtual Environment
+2 Create a Virtual Environment:
   python -m venv venv
 
-3 Install Dependencies
+3 Install Dependencies:
   pip install -r requirements.txt
 
-4 Or install manually
+4 Or install manually:
   pip install fastapi uvicorn langchain langchain-community langchain-core langchain-text-splitters langchain-ollama faiss-cpu      jinja2
 
-5 Install and Setup Ollama
+5 Install and Setup Ollama:
   Download from:
   https://ollama.com
 
@@ -84,10 +84,10 @@ Project Structure
    ollama pull phi3
    ollama pull all-minilm
 
-7 Start the ollma server
+7 Start the ollma server:
   ollama serve
 
-7 Run the Application
+7 Run the Application:
   uvicorn app:app --reload
 
   Server will start at:http://127.0.0.1:8000
